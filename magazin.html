@@ -1,0 +1,63 @@
+<html>
+<head>
+<script type="text/javascript">
+function valid(form)
+	var fail=folse
+	var name=form.name.value;
+	var name2=form.name2.value;
+	
+	if(name=="" | name==" ")
+		fail="вы не ввели имя";
+	else if(name2=="" | name2==" ")
+		fail="вы не ввели фамилию";
+	if(fail)
+			alert(fail);
+			
+</script>
+</head>
+<body> Форма регистрация <br>
+<form method="post" name="test" id ="form">
+<label for="name"> Видите имя </label>
+<input type="text" placeholder="Абдулло" name="name" id="name"><br>
+<label for="name2"> Видите Фамилию </label>
+<input type="text" placeholder="Каландаров" name="name2" id="name2"><br>
+<label for="password"> ВВедите пароль: </label>
+<input type="password" name="password" id="password"><br>
+<label for="password"> Повторите пароль: </label>
+<input type="password" name="REpassword" id="REpassword"><br>
+<span> Укажите пол: </span><br>
+
+
+
+<input type="button" onclick="valid(document.getElementBuld('form'))"
+name="button" value="Готово!">
+</form>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
